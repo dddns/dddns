@@ -1,0 +1,10 @@
+C:\development\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe.config
+C:\development\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+C:\development\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.pdb
+C:\development\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.exe
+C:\development\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.pdb
+C:\development\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.ProjectInstaller.resources
+C:\development\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.csproj.GenerateResource.Cache
+C:\development\DecimalDNSService\DecimalDNSService\bin\Debug\System.Net.Http.dll
+C:\development\DecimalDNSService\DecimalDNSService\bin\Debug\System.Net.Http.xml
+C:\development\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.csprojResolveAssemblyReference.cache

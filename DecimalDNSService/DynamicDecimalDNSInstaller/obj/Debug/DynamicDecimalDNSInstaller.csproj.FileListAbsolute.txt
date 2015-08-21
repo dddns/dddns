@@ -1,0 +1,10 @@
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.csprojResolveAssemblyReference.cache
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.Form1.resources
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.Properties.Resources.resources
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.csproj.GenerateResource.Cache
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\bin\Debug\DynamicDecimalDNSInstaller.exe
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\bin\Debug\DynamicDecimalDNSInstaller.pdb
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.exe
+C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.pdb
+C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.exe
+C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.pdb

@@ -1,0 +1,7 @@
+C:\development\DecimalDNSService\DecimalDNSService\bin\Release\DecimalDNSService.exe.config
+C:\development\DecimalDNSService\DecimalDNSService\bin\Release\DecimalDNSService.exe
+C:\development\DecimalDNSService\DecimalDNSService\bin\Release\DecimalDNSService.pdb
+C:\development\DecimalDNSService\DecimalDNSService\obj\Release\DecimalDNSService.ProjectInstaller.resources
+C:\development\DecimalDNSService\DecimalDNSService\obj\Release\DecimalDNSService.csproj.GenerateResource.Cache
+C:\development\DecimalDNSService\DecimalDNSService\obj\Release\DecimalDNSService.exe
+C:\development\DecimalDNSService\DecimalDNSService\obj\Release\DecimalDNSService.pdb

@@ -1,0 +1,6 @@
+C:\development\DecimalDNSService\dpainel\bin\dpainel.dll.config
+C:\development\DecimalDNSService\dpainel\bin\dpainel.dll
+C:\development\DecimalDNSService\dpainel\bin\dpainel.pdb
+C:\development\DecimalDNSService\dpainel\obj\Debug\dpainel.csprojResolveAssemblyReference.cache
+C:\development\DecimalDNSService\dpainel\obj\Debug\dpainel.dll
+C:\development\DecimalDNSService\dpainel\obj\Debug\dpainel.pdb

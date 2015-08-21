@@ -1,0 +1,559 @@
+8/21/2015 9:52:24 AM: Service stopped.
+8/21/2015 9:53:42 AM: Service stopped.
+8/21/2015 9:56:39 AM: Service stopped.
+8/21/2015 9:57:04 AM: Service stopped.
+8/21/2015 9:58:14 AM: Service started.
+8/21/2015 9:58:29 AM: Timer ticked!!!
+8/21/2015 9:58:44 AM: Timer ticked!!!
+8/21/2015 9:58:59 AM: Timer ticked!!!
+8/21/2015 9:59:14 AM: Timer ticked!!!
+8/21/2015 9:59:29 AM: Timer ticked!!!
+8/21/2015 9:59:44 AM: Timer ticked!!!
+8/21/2015 9:59:59 AM: Timer ticked!!!
+8/21/2015 10:00:14 AM: Timer ticked!!!
+8/21/2015 10:00:29 AM: Timer ticked!!!
+8/21/2015 10:00:44 AM: Timer ticked!!!
+8/21/2015 10:00:59 AM: Timer ticked!!!
+8/21/2015 10:01:14 AM: Timer ticked!!!
+8/21/2015 10:01:29 AM: Timer ticked!!!
+8/21/2015 10:01:44 AM: Timer ticked!!!
+8/21/2015 10:01:59 AM: Timer ticked!!!
+8/21/2015 10:02:14 AM: Timer ticked!!!
+8/21/2015 10:02:29 AM: Timer ticked!!!
+8/21/2015 10:02:44 AM: Timer ticked!!!
+8/21/2015 10:02:59 AM: Timer ticked!!!
+8/21/2015 10:03:14 AM: Timer ticked!!!
+8/21/2015 10:03:29 AM: Timer ticked!!!
+8/21/2015 10:03:44 AM: Timer ticked!!!
+8/21/2015 10:03:59 AM: Timer ticked!!!
+8/21/2015 10:04:14 AM: Timer ticked!!!
+8/21/2015 10:04:29 AM: Timer ticked!!!
+8/21/2015 10:04:44 AM: Timer ticked!!!
+8/21/2015 10:04:59 AM: Timer ticked!!!
+8/21/2015 10:05:14 AM: Timer ticked!!!
+8/21/2015 10:05:29 AM: Timer ticked!!!
+8/21/2015 10:05:44 AM: Timer ticked!!!
+8/21/2015 10:05:59 AM: Timer ticked!!!
+8/21/2015 10:06:14 AM: Timer ticked!!!
+8/21/2015 10:06:29 AM: Timer ticked!!!
+8/21/2015 10:06:44 AM: Timer ticked!!!
+8/21/2015 10:06:59 AM: Timer ticked!!!
+8/21/2015 10:07:14 AM: Timer ticked!!!
+8/21/2015 10:07:29 AM: Timer ticked!!!
+8/21/2015 10:07:44 AM: Timer ticked!!!
+8/21/2015 10:07:59 AM: Timer ticked!!!
+8/21/2015 10:08:14 AM: Timer ticked!!!
+8/21/2015 10:08:29 AM: Timer ticked!!!
+8/21/2015 10:08:44 AM: Timer ticked!!!
+8/21/2015 10:08:59 AM: Timer ticked!!!
+8/21/2015 10:09:14 AM: Timer ticked!!!
+8/21/2015 10:09:29 AM: Timer ticked!!!
+8/21/2015 10:09:44 AM: Timer ticked!!!
+8/21/2015 10:09:59 AM: Timer ticked!!!
+8/21/2015 10:10:14 AM: Timer ticked!!!
+8/21/2015 10:10:29 AM: Timer ticked!!!
+8/21/2015 10:10:44 AM: Timer ticked!!!
+8/21/2015 10:10:59 AM: Timer ticked!!!
+8/21/2015 10:11:14 AM: Timer ticked!!!
+8/21/2015 10:11:29 AM: Timer ticked!!!
+8/21/2015 10:11:44 AM: Timer ticked!!!
+8/21/2015 10:11:59 AM: Timer ticked!!!
+8/21/2015 10:12:14 AM: Timer ticked!!!
+8/21/2015 10:12:29 AM: Timer ticked!!!
+8/21/2015 10:12:44 AM: Timer ticked!!!
+8/21/2015 10:12:59 AM: Timer ticked!!!
+8/21/2015 10:13:14 AM: Timer ticked!!!
+8/21/2015 10:13:29 AM: Timer ticked!!!
+8/21/2015 10:13:44 AM: Timer ticked!!!
+8/21/2015 10:13:59 AM: Timer ticked!!!
+8/21/2015 10:14:14 AM: Timer ticked!!!
+8/21/2015 10:14:29 AM: Timer ticked!!!
+8/21/2015 10:14:44 AM: Timer ticked!!!
+8/21/2015 10:14:59 AM: Timer ticked!!!
+8/21/2015 10:15:14 AM: Timer ticked!!!
+8/21/2015 10:15:29 AM: Timer ticked!!!
+8/21/2015 10:15:44 AM: Timer ticked!!!
+8/21/2015 10:15:59 AM: Timer ticked!!!
+8/21/2015 10:16:14 AM: Timer ticked!!!
+8/21/2015 10:16:29 AM: Timer ticked!!!
+8/21/2015 10:16:44 AM: Timer ticked!!!
+8/21/2015 10:16:59 AM: Timer ticked!!!
+8/21/2015 10:17:14 AM: Timer ticked!!!
+8/21/2015 10:17:29 AM: Timer ticked!!!
+8/21/2015 10:17:44 AM: Timer ticked!!!
+8/21/2015 10:17:59 AM: Timer ticked!!!
+8/21/2015 10:18:14 AM: Timer ticked!!!
+8/21/2015 10:18:29 AM: Timer ticked!!!
+8/21/2015 10:18:44 AM: Timer ticked!!!
+8/21/2015 10:18:59 AM: Timer ticked!!!
+8/21/2015 10:19:14 AM: Timer ticked!!!
+8/21/2015 10:19:29 AM: Timer ticked!!!
+8/21/2015 10:19:44 AM: Timer ticked!!!
+8/21/2015 10:19:59 AM: Timer ticked!!!
+8/21/2015 10:20:14 AM: Timer ticked!!!
+8/21/2015 10:20:29 AM: Timer ticked!!!
+8/21/2015 10:20:44 AM: Timer ticked!!!
+8/21/2015 10:20:59 AM: Timer ticked!!!
+8/21/2015 10:21:14 AM: Timer ticked!!!
+8/21/2015 10:21:29 AM: Timer ticked!!!
+8/21/2015 10:21:44 AM: Timer ticked!!!
+8/21/2015 10:21:59 AM: Timer ticked!!!
+8/21/2015 10:22:14 AM: Timer ticked!!!
+8/21/2015 10:22:29 AM: Timer ticked!!!
+8/21/2015 10:22:44 AM: Timer ticked!!!
+8/21/2015 10:22:59 AM: Timer ticked!!!
+8/21/2015 10:23:14 AM: Timer ticked!!!
+8/21/2015 10:23:29 AM: Timer ticked!!!
+8/21/2015 10:23:44 AM: Timer ticked!!!
+8/21/2015 10:23:59 AM: Timer ticked!!!
+8/21/2015 10:24:14 AM: Timer ticked!!!
+8/21/2015 10:24:29 AM: Timer ticked!!!
+8/21/2015 10:24:44 AM: Timer ticked!!!
+8/21/2015 10:24:59 AM: Timer ticked!!!
+8/21/2015 10:25:14 AM: Timer ticked!!!
+8/21/2015 10:25:29 AM: Timer ticked!!!
+8/21/2015 10:25:44 AM: Timer ticked!!!
+8/21/2015 10:25:59 AM: Timer ticked!!!
+8/21/2015 10:26:14 AM: Timer ticked!!!
+8/21/2015 10:26:29 AM: Timer ticked!!!
+8/21/2015 10:26:44 AM: Timer ticked!!!
+8/21/2015 10:26:59 AM: Timer ticked!!!
+8/21/2015 10:27:14 AM: Timer ticked!!!
+8/21/2015 10:27:29 AM: Timer ticked!!!
+8/21/2015 10:27:44 AM: Timer ticked!!!
+8/21/2015 10:27:59 AM: Timer ticked!!!
+8/21/2015 10:28:04 AM: Service stopped.
+8/21/2015 10:31:14 AM: Service started.
+8/21/2015 10:31:29 AM: Timer ticked!!!
+8/21/2015 10:31:44 AM: Timer ticked!!!
+8/21/2015 10:31:59 AM: Timer ticked!!!
+8/21/2015 10:32:14 AM: Timer ticked!!!
+8/21/2015 10:32:29 AM: Timer ticked!!!
+8/21/2015 10:32:44 AM: Timer ticked!!!
+8/21/2015 10:32:59 AM: Timer ticked!!!
+8/21/2015 10:33:14 AM: Timer ticked!!!
+8/21/2015 10:33:29 AM: Timer ticked!!!
+8/21/2015 10:33:44 AM: Timer ticked!!!
+8/21/2015 10:33:59 AM: Timer ticked!!!
+8/21/2015 10:34:14 AM: Timer ticked!!!
+8/21/2015 10:34:29 AM: Timer ticked!!!
+8/21/2015 10:34:44 AM: Timer ticked!!!
+8/21/2015 10:34:59 AM: Timer ticked!!!
+8/21/2015 10:35:14 AM: Timer ticked!!!
+8/21/2015 10:35:29 AM: Timer ticked!!!
+8/21/2015 10:35:44 AM: Timer ticked!!!
+8/21/2015 10:35:59 AM: Timer ticked!!!
+8/21/2015 10:36:14 AM: Timer ticked!!!
+8/21/2015 10:36:29 AM: Timer ticked!!!
+8/21/2015 10:36:44 AM: Timer ticked!!!
+8/21/2015 10:36:59 AM: Timer ticked!!!
+8/21/2015 10:37:14 AM: Timer ticked!!!
+8/21/2015 10:37:29 AM: Timer ticked!!!
+8/21/2015 10:37:44 AM: Timer ticked!!!
+8/21/2015 10:37:51 AM: Service stopped.
+8/21/2015 10:38:16 AM: Service started.
+8/21/2015 10:38:31 AM: Timer ticked!!!
+8/21/2015 10:38:46 AM: Timer ticked!!!
+8/21/2015 10:39:01 AM: Timer ticked!!!
+8/21/2015 10:39:16 AM: Timer ticked!!!
+8/21/2015 10:39:31 AM: Timer ticked!!!
+8/21/2015 10:39:46 AM: Timer ticked!!!
+8/21/2015 10:39:52 AM: Service stopped.
+8/21/2015 10:48:24 AM: Service started.
+8/21/2015 11:48:39 AM: Service started.
+8/21/2015 11:48:39 AM: Service started. Eventlog ok.
+8/21/2015 11:48:54 AM: Timer ticked!!!
+8/21/2015 11:49:09 AM: Timer ticked!!!
+8/21/2015 11:49:24 AM: Timer ticked!!!
+8/21/2015 11:49:39 AM: Timer ticked!!!
+8/21/2015 11:49:54 AM: Timer ticked!!!
+8/21/2015 11:50:09 AM: Timer ticked!!!
+8/21/2015 11:50:24 AM: Timer ticked!!!
+8/21/2015 11:50:39 AM: Timer ticked!!!
+8/21/2015 11:50:44 AM: Service stopped.
+8/21/2015 11:50:50 AM: Service started.
+8/21/2015 11:50:50 AM: Service started. Eventlog ok.
+8/21/2015 11:51:05 AM: Timer ticked!!!
+8/21/2015 11:51:20 AM: Timer ticked!!!
+8/21/2015 11:51:35 AM: Timer ticked!!!
+8/21/2015 11:51:50 AM: Timer ticked!!!
+8/21/2015 11:52:05 AM: Timer ticked!!!
+8/21/2015 11:52:20 AM: Timer ticked!!!
+8/21/2015 11:52:35 AM: Timer ticked!!!
+8/21/2015 11:52:50 AM: Timer ticked!!!
+8/21/2015 11:53:05 AM: Timer ticked!!!
+8/21/2015 11:53:20 AM: Timer ticked!!!
+8/21/2015 11:53:35 AM: Timer ticked!!!
+8/21/2015 11:53:50 AM: Timer ticked!!!
+8/21/2015 11:54:05 AM: Timer ticked!!!
+8/21/2015 11:54:20 AM: Timer ticked!!!
+8/21/2015 11:54:35 AM: Timer ticked!!!
+8/21/2015 11:54:50 AM: Timer ticked!!!
+8/21/2015 11:55:05 AM: Timer ticked!!!
+8/21/2015 11:55:20 AM: Timer ticked!!!
+8/21/2015 11:55:35 AM: Timer ticked!!!
+8/21/2015 11:55:50 AM: Timer ticked!!!
+8/21/2015 11:56:05 AM: Timer ticked!!!
+8/21/2015 11:56:20 AM: Timer ticked!!!
+8/21/2015 11:56:35 AM: Timer ticked!!!
+8/21/2015 11:56:50 AM: Timer ticked!!!
+8/21/2015 11:57:05 AM: Timer ticked!!!
+8/21/2015 11:57:20 AM: Timer ticked!!!
+8/21/2015 11:57:35 AM: Timer ticked!!!
+8/21/2015 11:57:50 AM: Timer ticked!!!
+8/21/2015 11:57:50 AM: Service stopped.
+8/21/2015 11:57:52 AM: Service started.
+8/21/2015 11:57:52 AM: Service started. Eventlog ok.
+8/21/2015 11:58:07 AM: Timer ticked!!!
+8/21/2015 11:58:22 AM: Timer ticked!!!
+8/21/2015 11:58:37 AM: Timer ticked!!!
+8/21/2015 11:58:52 AM: Timer ticked!!!
+8/21/2015 11:59:07 AM: Timer ticked!!!
+8/21/2015 11:59:22 AM: Timer ticked!!!
+8/21/2015 11:59:37 AM: Timer ticked!!!
+8/21/2015 11:59:52 AM: Timer ticked!!!
+8/21/2015 12:00:07 PM: Timer ticked!!!
+8/21/2015 12:00:22 PM: Timer ticked!!!
+8/21/2015 12:00:37 PM: Timer ticked!!!
+8/21/2015 12:00:52 PM: Timer ticked!!!
+8/21/2015 12:01:07 PM: Timer ticked!!!
+8/21/2015 12:01:22 PM: Timer ticked!!!
+8/21/2015 12:01:37 PM: Timer ticked!!!
+8/21/2015 12:01:52 PM: Timer ticked!!!
+8/21/2015 12:02:07 PM: Timer ticked!!!
+8/21/2015 12:02:22 PM: Timer ticked!!!
+8/21/2015 12:02:32 PM: Service stopped.
+8/21/2015 12:05:44 PM: Service started.
+8/21/2015 12:05:44 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:05:44 PM: Service started. Eventlog ok.
+8/21/2015 12:05:59 PM: Timer ticked!!!
+8/21/2015 12:06:14 PM: Timer ticked!!!
+8/21/2015 12:06:25 PM: Service stopped.
+8/21/2015 12:06:29 PM: Service started.
+8/21/2015 12:06:29 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:06:29 PM: Service started. Eventlog ok.
+8/21/2015 12:06:44 PM: Timer ticked!!!
+8/21/2015 12:06:59 PM: Timer ticked!!!
+8/21/2015 12:07:09 PM: Service stopped.
+8/21/2015 12:08:41 PM: Service started.
+8/21/2015 12:08:41 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:08:41 PM: Service started. Eventlog ok.
+8/21/2015 12:08:45 PM: Service stopped.
+8/21/2015 12:08:49 PM: Service started.
+8/21/2015 12:08:49 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:08:49 PM: Service started. Eventlog ok.
+8/21/2015 12:09:04 PM: Timer ticked!!!
+8/21/2015 12:09:19 PM: Timer ticked!!!
+8/21/2015 12:09:34 PM: Timer ticked!!!
+8/21/2015 12:09:49 PM: Timer ticked!!!
+8/21/2015 12:10:04 PM: Timer ticked!!!
+8/21/2015 12:10:19 PM: Timer ticked!!!
+8/21/2015 12:10:34 PM: Timer ticked!!!
+8/21/2015 12:10:49 PM: Timer ticked!!!
+8/21/2015 12:11:04 PM: Timer ticked!!!
+8/21/2015 12:11:19 PM: Timer ticked!!!
+8/21/2015 12:11:34 PM: Timer ticked!!!
+8/21/2015 12:11:49 PM: Timer ticked!!!
+8/21/2015 12:12:04 PM: Timer ticked!!!
+8/21/2015 12:12:19 PM: Timer ticked!!!
+8/21/2015 12:12:28 PM: Service stopped.
+8/21/2015 12:13:01 PM: Service started.
+8/21/2015 12:13:01 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:13:01 PM: Service started. Eventlog ok.
+8/21/2015 12:13:16 PM: Timer ticked!!!
+8/21/2015 12:13:18 PM: Service stopped.
+8/21/2015 12:13:21 PM: Service started.
+8/21/2015 12:13:21 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:13:22 PM: Service started. Eventlog ok.
+8/21/2015 12:13:36 PM: Timer ticked!!!
+8/21/2015 12:13:46 PM: Service stopped.
+8/21/2015 12:15:36 PM: Service started.
+8/21/2015 12:15:36 PM: Service started. Eventlog ok.
+8/21/2015 12:15:51 PM: Timer ticked!!!
+8/21/2015 12:16:06 PM: Timer ticked!!!
+8/21/2015 12:16:21 PM: Timer ticked!!!
+8/21/2015 12:16:23 PM: Service stopped.
+8/21/2015 12:16:40 PM: Service started.
+8/21/2015 12:16:40 PM: Service started. Eventlog ok.
+8/21/2015 12:16:55 PM: Timer ticked!!!
+8/21/2015 12:17:10 PM: Timer ticked!!!
+8/21/2015 12:17:25 PM: Timer ticked!!!
+8/21/2015 12:17:40 PM: Timer ticked!!!
+8/21/2015 12:17:55 PM: Timer ticked!!!
+8/21/2015 12:17:56 PM: Service stopped.
+8/21/2015 12:18:13 PM: Service started.
+8/21/2015 12:18:13 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:18:13 PM: Service started. Eventlog ok.
+8/21/2015 12:18:28 PM: Timer ticked!!!
+8/21/2015 12:18:43 PM: Timer ticked!!!
+8/21/2015 12:18:58 PM: Timer ticked!!!
+8/21/2015 12:19:13 PM: Timer ticked!!!
+8/21/2015 12:19:28 PM: Timer ticked!!!
+8/21/2015 12:19:43 PM: Timer ticked!!!
+8/21/2015 12:19:58 PM: Timer ticked!!!
+8/21/2015 12:20:13 PM: Timer ticked!!!
+8/21/2015 12:20:28 PM: Timer ticked!!!
+8/21/2015 12:20:30 PM: Service stopped.
+8/21/2015 12:20:46 PM: Service started.
+8/21/2015 12:20:46 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:20:46 PM: Service started. Eventlog ok.
+8/21/2015 12:21:01 PM: Timer ticked!!!
+8/21/2015 12:21:12 PM: Service stopped.
+8/21/2015 12:23:25 PM: Service started.
+8/21/2015 12:23:25 PM: Service started. Eventlog ok.
+8/21/2015 12:23:40 PM: Timer ticked!!!
+8/21/2015 12:23:55 PM: Timer ticked!!!
+8/21/2015 12:24:10 PM: Timer ticked!!!
+8/21/2015 12:24:14 PM: Service stopped.
+8/21/2015 12:24:45 PM: Service started.
+8/21/2015 12:24:45 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:24:45 PM: Service started. Eventlog ok.
+8/21/2015 12:25:00 PM: Timer ticked!!!
+8/21/2015 12:25:08 PM: Service stopped.
+8/21/2015 12:25:11 PM: Service started.
+8/21/2015 12:25:11 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:25:11 PM: Service started. Eventlog ok.
+8/21/2015 12:25:26 PM: Timer ticked!!!
+8/21/2015 12:25:41 PM: Timer ticked!!!
+8/21/2015 12:25:45 PM: Service stopped.
+8/21/2015 12:25:46 PM: Service started.
+8/21/2015 12:25:46 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:25:46 PM: Service started. Eventlog ok.
+8/21/2015 12:26:01 PM: Timer ticked!!!
+8/21/2015 12:26:04 PM: Service stopped.
+8/21/2015 12:26:26 PM: Service started.
+8/21/2015 12:26:26 PM: !!!!!!!!!!!!!!!!!!!! Erro no eventlog.
+8/21/2015 12:26:26 PM: Service started. Eventlog ok.
+8/21/2015 12:26:41 PM: Timer ticked!!!
+8/21/2015 12:26:56 PM: Timer ticked!!!
+8/21/2015 12:27:04 PM: Service stopped.
+8/21/2015 12:27:32 PM: Service started.
+8/21/2015 12:27:32 PM: ! Erro no eventlog:The source was not found, but some or all event logs could not be searched.  To create the source, you need permission to read all event logs to make sure that the new source name is unique.  Inaccessible logs: Security.
+8/21/2015 12:27:32 PM: Service started. Eventlog ok.
+8/21/2015 12:27:47 PM: Timer ticked!!!
+8/21/2015 12:28:02 PM: Timer ticked!!!
+8/21/2015 12:28:17 PM: Timer ticked!!!
+8/21/2015 12:28:32 PM: Timer ticked!!!
+8/21/2015 12:28:47 PM: Timer ticked!!!
+8/21/2015 12:29:02 PM: Service stopped.
+8/21/2015 12:29:31 PM: Service started.
+8/21/2015 12:29:31 PM: ! Erro no eventlog:The source was not found, but some or all event logs could not be searched.  To create the source, you need permission to read all event logs to make sure that the new source name is unique.  Inaccessible logs: Security.
+8/21/2015 12:29:31 PM: Service started. Eventlog ok.
+8/21/2015 12:29:46 PM: Timer ticked!!!
+8/21/2015 12:29:46 PM: Service stopped.
+8/21/2015 1:36:57 PM: Service started.
+8/21/2015 1:36:57 PM: Service started. Eventlog ok.
+8/21/2015 1:36:57 PM: Timer active.
+8/21/2015 1:37:12 PM: Timer ticked!!!
+8/21/2015 1:37:27 PM: Timer ticked!!!
+8/21/2015 1:37:42 PM: Timer ticked!!!
+8/21/2015 1:37:57 PM: Timer ticked!!!
+8/21/2015 1:38:12 PM: Timer ticked!!!
+8/21/2015 1:38:17 PM: Service stopped.
+8/21/2015 1:38:40 PM: Service started.
+8/21/2015 1:38:40 PM: ! Erro no eventlog:The source was not found, but some or all event logs could not be searched.  To create the source, you need permission to read all event logs to make sure that the new source name is unique.  Inaccessible logs: Security.
+8/21/2015 1:38:40 PM: Service started. Eventlog ok.
+8/21/2015 1:38:40 PM: Timer active.
+8/21/2015 1:38:55 PM: Timer ticked!!!
+8/21/2015 1:39:10 PM: Timer ticked!!!
+8/21/2015 1:39:25 PM: Timer ticked!!!
+8/21/2015 1:39:29 PM: Service stopped.
+8/21/2015 1:40:07 PM: Service started.
+8/21/2015 1:40:07 PM: Service started. Eventlog ok.
+8/21/2015 1:40:07 PM: Timer active.
+8/21/2015 1:40:22 PM: Timer ticked!!!
+8/21/2015 1:40:37 PM: Timer ticked!!!
+8/21/2015 1:40:52 PM: Timer ticked!!!
+8/21/2015 1:41:07 PM: Timer ticked!!!
+8/21/2015 1:41:22 PM: Timer ticked!!!
+8/21/2015 1:41:37 PM: Timer ticked!!!
+8/21/2015 1:41:52 PM: Timer ticked!!!
+8/21/2015 1:42:07 PM: Timer ticked!!!
+8/21/2015 1:42:22 PM: Timer ticked!!!
+8/21/2015 1:42:37 PM: Timer ticked!!!
+8/21/2015 1:42:52 PM: Timer ticked!!!
+8/21/2015 1:43:07 PM: Timer ticked!!!
+8/21/2015 1:43:22 PM: Timer ticked!!!
+8/21/2015 1:43:37 PM: Timer ticked!!!
+8/21/2015 1:43:52 PM: Timer ticked!!!
+8/21/2015 1:44:07 PM: Timer ticked!!!
+8/21/2015 1:44:22 PM: Timer ticked!!!
+8/21/2015 1:44:37 PM: Timer ticked!!!
+8/21/2015 1:44:52 PM: Timer ticked!!!
+8/21/2015 1:45:07 PM: Timer ticked!!!
+8/21/2015 1:45:22 PM: Timer ticked!!!
+8/21/2015 1:45:37 PM: Timer ticked!!!
+8/21/2015 1:45:52 PM: Timer ticked!!!
+8/21/2015 1:46:07 PM: Timer ticked!!!
+8/21/2015 1:46:21 PM: Service stopped.
+8/21/2015 1:46:43 PM: Service started.
+8/21/2015 1:46:43 PM: Service started. Eventlog ok.
+8/21/2015 1:46:43 PM: Timer active.
+8/21/2015 1:46:58 PM: Tick in.
+8/21/2015 1:46:58 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+
+8/21/2015 1:46:58 PM: Tick out.
+8/21/2015 1:47:13 PM: Tick in.
+8/21/2015 1:47:13 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+
+8/21/2015 1:47:13 PM: Tick out.
+8/21/2015 1:47:18 PM: Service stopped.
+8/21/2015 1:52:43 PM: Service started.
+8/21/2015 1:52:43 PM: Service started. Eventlog ok.
+8/21/2015 1:52:43 PM: Timer active.
+8/21/2015 1:52:58 PM: Tick in.
+8/21/2015 1:52:58 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:52:58 PM: Tick out.
+8/21/2015 1:53:13 PM: Tick in.
+8/21/2015 1:53:13 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:53:13 PM: Tick out.
+8/21/2015 1:53:28 PM: Tick in.
+8/21/2015 1:53:28 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:53:28 PM: Tick out.
+8/21/2015 1:53:43 PM: Tick in.
+8/21/2015 1:53:43 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:53:43 PM: Tick out.
+8/21/2015 1:53:58 PM: Tick in.
+8/21/2015 1:53:58 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:53:58 PM: Tick out.
+8/21/2015 1:54:13 PM: Tick in.
+8/21/2015 1:54:13 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:54:13 PM: Tick out.
+8/21/2015 1:54:28 PM: Tick in.
+8/21/2015 1:54:28 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:54:28 PM: Tick out.
+8/21/2015 1:54:43 PM: Tick in.
+8/21/2015 1:54:43 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:54:43 PM: Tick out.
+8/21/2015 1:54:58 PM: Tick in.
+8/21/2015 1:54:58 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:54:58 PM: Tick out.
+8/21/2015 1:55:13 PM: Tick in.
+8/21/2015 1:55:13 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:55:13 PM: Tick out.
+8/21/2015 1:55:28 PM: Tick in.
+8/21/2015 1:55:28 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:55:28 PM: Tick out.
+8/21/2015 1:55:43 PM: Tick in.
+8/21/2015 1:55:43 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:55:43 PM: Tick out.
+8/21/2015 1:55:58 PM: Tick in.
+8/21/2015 1:55:58 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 1:55:58 PM: Tick out.
+8/21/2015 1:56:08 PM: Service stopped.
+8/21/2015 3:11:16 PM: Service started.
+8/21/2015 3:11:16 PM: Service started. Eventlog ok.
+8/21/2015 3:11:16 PM: Timer active.
+8/21/2015 3:11:16 PM: Tick in.
+8/21/2015 3:11:16 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:11:16 PM: EQ0xeD0l27DGtfCO14gXnA==
+8/21/2015 3:11:16 PM: 100.200.300.400
+8/21/2015 3:11:16 PM: Tick out.
+8/21/2015 3:11:31 PM: Tick in.
+8/21/2015 3:11:31 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:11:31 PM: EQ0xeD0l27DGtfCO14gXnA==
+8/21/2015 3:11:31 PM: 100.200.300.400
+8/21/2015 3:11:31 PM: Tick out.
+8/21/2015 3:11:46 PM: Tick in.
+8/21/2015 3:11:46 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:11:46 PM: EQ0xeD0l27DGtfCO14gXnA==
+8/21/2015 3:11:46 PM: 100.200.300.400
+8/21/2015 3:11:46 PM: Tick out.
+8/21/2015 3:11:52 PM: Service stopped.
+8/21/2015 3:15:13 PM: Service started.
+8/21/2015 3:15:13 PM: Service started. Eventlog ok.
+8/21/2015 3:15:13 PM: Timer active.
+8/21/2015 3:15:13 PM: Tick in.
+8/21/2015 3:15:13 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:15:26 PM: Service started.
+8/21/2015 3:15:26 PM: Service started. Eventlog ok.
+8/21/2015 3:15:26 PM: Timer active.
+8/21/2015 3:15:26 PM: Tick in.
+8/21/2015 3:15:27 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:16:31 PM: Service started.
+8/21/2015 3:16:32 PM: Service started. Eventlog ok.
+8/21/2015 3:16:32 PM: Timer active.
+8/21/2015 3:16:32 PM: Tick in.
+8/21/2015 3:16:32 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:16:32 PM: Specified initialization vector (IV) does not match the block size for this algorithm.
+8/21/2015 3:16:32 PM: Tick out.
+8/21/2015 3:16:47 PM: Tick in.
+8/21/2015 3:16:47 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:16:47 PM: Specified initialization vector (IV) does not match the block size for this algorithm.
+8/21/2015 3:16:47 PM: Tick out.
+8/21/2015 3:17:02 PM: Tick in.
+8/21/2015 3:17:02 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:17:02 PM: Specified initialization vector (IV) does not match the block size for this algorithm.
+8/21/2015 3:17:02 PM: Tick out.
+8/21/2015 3:17:09 PM: Service stopped.
+8/21/2015 3:17:55 PM: Service started.
+8/21/2015 3:17:55 PM: Service started. Eventlog ok.
+8/21/2015 3:17:55 PM: Timer active.
+8/21/2015 3:17:55 PM: Tick in.
+8/21/2015 3:17:55 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:17:55 PM: /hifs0CHqEidcZugi9JvWQ==
+8/21/2015 3:17:55 PM: 94.132.245.17
+8/21/2015 3:17:55 PM: Tick out.
+8/21/2015 3:18:10 PM: Tick in.
+8/21/2015 3:18:10 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:18:10 PM: /hifs0CHqEidcZugi9JvWQ==
+8/21/2015 3:18:10 PM: 94.132.245.17
+8/21/2015 3:18:10 PM: Tick out.
+8/21/2015 3:18:25 PM: Tick in.
+8/21/2015 3:18:25 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:18:25 PM: /hifs0CHqEidcZugi9JvWQ==
+8/21/2015 3:18:25 PM: 94.132.245.17
+8/21/2015 3:18:25 PM: Tick out.
+8/21/2015 3:18:34 PM: Service stopped.
+8/21/2015 3:19:42 PM: Service started.
+8/21/2015 3:19:42 PM: Service started. Eventlog ok.
+8/21/2015 3:19:42 PM: Timer active.
+8/21/2015 3:19:42 PM: Tick in.
+8/21/2015 3:19:42 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 3:19:42 PM: zJr1ZF3CG57JMfwEa2A96mVdHGPIuRH5X8tIee1TjCh7NQCD+deL+yNErSv3Qxxk
+8/21/2015 3:19:42 PM: 94.132.245.17+joaquimcoveiro+kimroscas
+8/21/2015 3:19:42 PM: Tick out.
+8/21/2015 3:19:52 PM: Service stopped.
+8/21/2015 4:13:37 PM: Service started.
+8/21/2015 4:13:37 PM: Service started. Eventlog ok.
+8/21/2015 4:13:37 PM: Timer active.
+8/21/2015 4:13:37 PM: Tick in.
+8/21/2015 4:13:37 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 4:13:37 PM: zJr1ZF3CG57JMfwEa2A96mVdHGPIuRH5X8tIee1TjCh7NQCD+deL+yNErSv3Qxxk
+8/21/2015 4:13:37 PM: 94.132.245.17+joaquimcoveiro+kimroscas
+8/21/2015 4:13:37 PM: Tick out.
+8/21/2015 4:13:41 PM: Service stopped.
+8/21/2015 4:15:32 PM: Service started.
+8/21/2015 4:15:32 PM: Service started. Eventlog ok.
+8/21/2015 4:15:32 PM: Timer active.
+8/21/2015 4:15:32 PM: Tick in.
+8/21/2015 4:15:32 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 4:15:32 PM: zJr1ZF3CG57JMfwEa2A96mVdHGPIuRH5X8tIee1TjCh3XOXjsomlnNvgDTyknhYmOMPkcGmmgh+ntoES8MRCnQ==
+8/21/2015 4:15:32 PM: 94.132.245.17+joaquimcoveiro+kimroscas+joaquimcoveiro.dddns.pt
+8/21/2015 4:15:32 PM: Tick out.
+8/21/2015 4:15:35 PM: Service stopped.
+8/21/2015 4:20:53 PM: Service started.
+8/21/2015 4:20:53 PM: Service started. Eventlog ok.
+8/21/2015 4:20:53 PM: Timer active.
+8/21/2015 4:20:53 PM: Tick in.
+8/21/2015 4:20:53 PM: zJr1ZF3CG57JMfwEa2A96mVdHGPIuRH5X8tIee1TjCh3XOXjsomlnNvgDTyknhYmOMPkcGmmgh+ntoES8MRCnQ==
+8/21/2015 4:20:53 PM: 94.132.245.17+joaquimcoveiro+kimroscas+joaquimcoveiro.dddns.pt
+8/21/2015 4:20:53 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 4:20:53 PM: Tick out.
+8/21/2015 4:20:56 PM: Service stopped.
+8/21/2015 4:59:24 PM: Service started.
+8/21/2015 4:59:24 PM: Service started. Eventlog ok.
+8/21/2015 4:59:24 PM: Timer active.
+8/21/2015 4:59:24 PM: Tick in.
+8/21/2015 4:59:24 PM: kvHQfb0QyJi6RWyIrsdQ08cYaDGolUk5fYowpZ7Cd9FdSUHwGATM61qyIARbvIWNYjyNOoVGT1WtdghYZ2+JhcuNWiOaL/hXKSb5taPIWz957lwmbbK7/FpIyKjfxUIf
+8/21/2015 4:59:24 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 4:59:24 PM: Tick out.
+8/21/2015 4:59:27 PM: Service stopped.
+8/21/2015 5:02:42 PM: Service started.
+8/21/2015 5:02:42 PM: Service started. Eventlog ok.
+8/21/2015 5:02:42 PM: Timer active.
+8/21/2015 5:02:42 PM: Tick in.
+8/21/2015 5:02:42 PM: 94.132.245.17 vmS9bEB9E6bPmgMPBnB1bsrvlotDIHatHW0x9xvqeeuwAtBjwJC5tvQUnFltXg0f
+8/21/2015 5:02:42 PM: PUBLIC IP is 94.132.245.17 from http://decimal.pt/get.php
+8/21/2015 5:02:42 PM: Tick out.
+8/21/2015 5:02:45 PM: Service stopped.

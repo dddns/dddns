@@ -1,0 +1,6 @@
+﻿Installing assembly 'C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   assemblypath = C:\development\DecimalDNSservice\DynamicDecimalDNSInstaller\bin\Debug\DecimalDNSService.exe
+   logfile = example.log
+Installing service DecimalDNSService...
+Creating EventLog source DecimalDNSService in log Application...
