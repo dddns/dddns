@@ -144,8 +144,20 @@ namespace DecimalDNSService
                 t + " hash=" + chave, 
                 EventLogEntryType.Information, 19284);
 
-            Library.WriteErrorLog("Tick out.");
+            // POST
+            //using (WebClient wclient = new WebClient())
+            //{
+            //    System.Collections.Specialized.NameValueCollection reqparm = new System.Collections.Specialized.NameValueCollection();
+            //    reqparm.Add("hash", chave);
+            //    byte[] responsebytes = wclient.UploadValues("http://localhost:57440/", "POST", reqparm);
+            //    string responsebody = Encoding.UTF8.GetString(responsebytes);
 
+            //    Library.WriteErrorLog(responsebody);
+            //}
+
+            // END POST
+
+            Library.WriteErrorLog("Tick out.");
         }
 
         protected override void OnStop()
