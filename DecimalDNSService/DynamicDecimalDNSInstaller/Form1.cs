@@ -17,6 +17,7 @@ using System.Security.Principal;
 using System.Diagnostics;
 using System.IO;
 using System.Xml;
+using System.Security.AccessControl;
 
 namespace DynamicDecimalDNSInstaller
 {
@@ -71,9 +72,21 @@ namespace DynamicDecimalDNSInstaller
             writer.WriteEndDocument();
             writer.Close();
 
+            string fileName = "DecimalDNSService.exe";
+            SetNTFSPermission(AppDomain.CurrentDomain.BaseDirectory +
+                            fileName, @"NT AUTHORITY\LOCAL SERVICE",
+                            FileSystemRights.FullControl,
+                            AccessControlType.Allow); // set "local service" to FULL for our service
+
             Executa("install.bat");
         }
 
+        private void SetNTFSPermission(string fileName, string account,FileSystemRights rights, AccessControlType controlType)
+        {
+            FileSecurity fSecurity = File.GetAccessControl(fileName);
+            fSecurity.AddAccessRule(new FileSystemAccessRule(account,rights, controlType));
+            File.SetAccessControl(fileName, fSecurity);
+        }
 
         //
         // adicionar "local service" icacls senão não tem permissão
