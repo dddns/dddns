@@ -1,0 +1,1 @@
+icacls *.* /grant "NT AUTHORITY\LOCAL SERVICE":(f)

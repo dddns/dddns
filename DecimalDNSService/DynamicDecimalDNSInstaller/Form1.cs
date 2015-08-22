@@ -72,12 +72,15 @@ namespace DynamicDecimalDNSInstaller
             writer.WriteEndDocument();
             writer.Close();
 
-            string fileName = "DecimalDNSService.exe";
-            SetNTFSPermission(AppDomain.CurrentDomain.BaseDirectory +
-                            fileName, @"NT AUTHORITY\LOCAL SERVICE",
-                            FileSystemRights.FullControl,
-                            AccessControlType.Allow); // set "local service" to FULL for our service
+            // bug: verificar isto
+            // OU FAZER: icacls *.* /grant "NT AUTHORITY\LOCAL SERVICE":(f)
+            //string fileName = "DecimalDNSService.exe";
+            //SetNTFSPermission(AppDomain.CurrentDomain.BaseDirectory +
+            //                fileName, @"NT AUTHORITY\LOCAL SERVICE",
+            //                FileSystemRights.FullControl,
+            //                AccessControlType.Allow); // set "local service" to FULL for our service
 
+            Executa("setpermission.bat");
             Executa("install.bat");
         }
 

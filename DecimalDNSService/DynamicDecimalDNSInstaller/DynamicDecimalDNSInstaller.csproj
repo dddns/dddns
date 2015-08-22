@@ -69,6 +69,7 @@
     <None Include="bin\Debug\install.bat" />
     <None Include="bin\Debug\InstallUtil.exe.config" />
     <None Include="bin\Debug\InstallUtil.InstallLog" />
+    <None Include="bin\Debug\setpermission.bat" />
     <None Include="bin\Debug\startservice.bat" />
     <None Include="bin\Debug\stopservice.bat" />
     <None Include="bin\Debug\uninstall.bat" />
