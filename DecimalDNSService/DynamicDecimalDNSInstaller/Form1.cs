@@ -35,6 +35,10 @@ namespace DynamicDecimalDNSInstaller
             Executa("install.bat");
         }
                 
+
+        //
+        // adicionar "local service" icacls senão não tem permissão
+
         private void Executa(string filename)
         {
             Process p = new Process();
