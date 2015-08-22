@@ -40,9 +40,9 @@ namespace DecimalDNSService
 
             try
             {
-                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", 
-                    "DecimalDNSService started working.", 
-                    EventLogEntryType.Information, 
+                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService",
+                    "DecimalDNSService started working.",
+                    EventLogEntryType.Information,
                     19283);
             }
             catch (Exception exp)
@@ -56,7 +56,7 @@ namespace DecimalDNSService
             timer1.Enabled = true;
             timer1.Start();
             // force on start of service to update
-            //timer1_tick(null, null);
+            timer1_tick(null, null);
 
             Library.WriteErrorLog("OnStart ok.");
         }
@@ -140,20 +140,48 @@ namespace DecimalDNSService
             }
 
             Library.WriteErrorLog(t);
-            System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", 
-                t + " hash=" + chave, 
+            System.Diagnostics.EventLog.WriteEntry("DecimalDNSService",
+                t + " hash=" + chave,
                 EventLogEntryType.Information, 19284);
 
             // POST
-            //using (WebClient wclient = new WebClient())
-            //{
-            //    System.Collections.Specialized.NameValueCollection reqparm = new System.Collections.Specialized.NameValueCollection();
-            //    reqparm.Add("hash", chave);
-            //    byte[] responsebytes = wclient.UploadValues("http://localhost:57440/", "POST", reqparm);
-            //    string responsebody = Encoding.UTF8.GetString(responsebytes);
+            // https://msdn.microsoft.com/en-us/library/debx8sh9.aspx
 
-            //    Library.WriteErrorLog(responsebody);
-            //}
+
+            WebRequest request = WebRequest.Create("http://adelinoaraujo.com/post.php?hash=" + tools.hash);
+            request.Credentials = CredentialCache.DefaultCredentials;
+            WebResponse response = request.GetResponse();
+            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+            Stream dataStream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(dataStream);
+            string responseFromServer = reader.ReadToEnd();
+            Library.WriteErrorLog(responseFromServer);
+            reader.Close();
+            response.Close();
+
+
+
+            //WebRequest request = WebRequest.Create("http://adelinoaraujo.com/post.php");
+            //request.Method = "POST";
+            //string postData = "?hash=" + tools.hash;
+            //byte[] byteArray = Encoding.UTF8.GetBytes(postData);
+            //request.ContentType = "application/x-www-form-urlencoded";
+            //request.ContentLength = byteArray.Length;
+            //Stream dataStream = request.GetRequestStream();
+            //dataStream.Write(byteArray, 0, byteArray.Length);
+            //dataStream.Close();
+
+            //WebResponse response = request.GetResponse();
+            //Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+            //dataStream = response.GetResponseStream();
+            //StreamReader reader = new StreamReader(dataStream);
+            //string responseFromServer = reader.ReadToEnd();
+
+            //Library.WriteErrorLog(responseFromServer);
+
+            //reader.Close();
+            //dataStream.Close();
+            //response.Close();
 
             // END POST
 
