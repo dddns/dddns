@@ -15,6 +15,8 @@ using System.Net;
 using System.Security;
 using System.Security.Principal;
 using System.Diagnostics;
+using System.IO;
+using System.Xml;
 
 namespace DynamicDecimalDNSInstaller
 {
@@ -32,9 +34,46 @@ namespace DynamicDecimalDNSInstaller
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+            XmlTextWriter writer = new XmlTextWriter(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml", System.Text.Encoding.UTF8);
+            writer.WriteStartDocument(true);
+            writer.Formatting = Formatting.Indented;
+            writer.Indentation = 2;
+            writer.WriteStartElement("dddnssettings");
+
+            writer.WriteStartElement("hash");
+            writer.WriteString(txtHash.Text);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("logtofile");
+            writer.WriteString((cbLogFile.Checked ? "1" : "0"));
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("logtoeventviewer");
+            writer.WriteString((cbLogEV.Checked ? "1" : "0"));
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("updateinterval");
+            int i = 0;
+            int.TryParse(txtInterval.Text, out i);
+
+            writer.WriteString((i * 60 * 1000).ToString());
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("serverurl");
+            writer.WriteString(txtServerURL.Text);
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("publicip");
+            writer.WriteString(txtPublicIP.Text);
+            writer.WriteEndElement();
+
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+            writer.Close();
+
             Executa("install.bat");
         }
-                
+
 
         //
         // adicionar "local service" icacls senão não tem permissão
@@ -70,14 +109,14 @@ namespace DynamicDecimalDNSInstaller
         }
         private static int InstallService()
         {
-            
+
 
             return 0;
         }
 
         private static int UninstallService()
         {
-          
+
 
             return 0;
         }

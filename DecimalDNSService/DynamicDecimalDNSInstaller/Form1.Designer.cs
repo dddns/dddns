@@ -44,8 +44,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.cbLogFile = new System.Windows.Forms.CheckBox();
+            this.cbLogEV = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -191,35 +191,35 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "update time in minuts";
             // 
-            // checkBox1
+            // cbLogFile
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(78, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(255, 17);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.Text = "create a text log in disk, good for troubleshooting";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbLogFile.AutoSize = true;
+            this.cbLogFile.Location = new System.Drawing.Point(78, 35);
+            this.cbLogFile.Name = "cbLogFile";
+            this.cbLogFile.Size = new System.Drawing.Size(255, 17);
+            this.cbLogFile.TabIndex = 22;
+            this.cbLogFile.Text = "create a text log in disk, good for troubleshooting";
+            this.cbLogFile.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbLogEV
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(78, 61);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(134, 17);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.Text = "log to the event viewer";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbLogEV.AutoSize = true;
+            this.cbLogEV.Checked = true;
+            this.cbLogEV.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbLogEV.Location = new System.Drawing.Point(78, 61);
+            this.cbLogEV.Name = "cbLogEV";
+            this.cbLogEV.Size = new System.Drawing.Size(134, 17);
+            this.cbLogEV.TabIndex = 23;
+            this.cbLogEV.Text = "log to the event viewer";
+            this.cbLogEV.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 245);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbLogEV);
+            this.Controls.Add(this.cbLogFile);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.label6);
@@ -262,8 +262,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox cbLogFile;
+        private System.Windows.Forms.CheckBox cbLogEV;
     }
 }
 
