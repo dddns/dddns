@@ -23,12 +23,6 @@ namespace DecimalDNSService
     public partial class DecimalDNSService : ServiceBase
     {
         private Timer timer1 = null;
-        static readonly string PasswordHash = "joaquimcoveiro";
-        static readonly string SaltKey = "kimroscas";
-        static readonly string VIKey = "dddns.pt-secret!";
-        static string userdomain = "joaquimcoveiro.dddns.pt";
-        // hash para os dados acima
-        string hash = "vmS9bEB9E6bPmgMPBnB1bsrvlotDIHatHW0x9xvqeeuwAtBjwJC5tvQUnFltXg0f";
 
         // ao registar o serviço o utilizador só precisa de fornecer a HASH gerada
         // no momento do registo no site
@@ -41,26 +35,76 @@ namespace DecimalDNSService
 
         protected override void OnStart(string[] args)
         {
+            GetXMLSettings();
             Library.WriteErrorLog("Service started.");
 
             try
             {
-                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", "DecimalDNSService started working.", EventLogEntryType.Information, 19282);
+                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", 
+                    "DecimalDNSService started working.", 
+                    EventLogEntryType.Information, 
+                    19283);
             }
-
             catch (Exception exp)
             {
-                Library.WriteErrorLog("! Erro no eventlog:" + exp.Message);
+                Library.WriteErrorLog("Error writting to eventlog." + exp.Message);
             }
 
-            Library.WriteErrorLog("Service started. Eventlog ok.");
-
             timer1 = new Timer();
-            timer1.Interval = 15000;
+            timer1.Interval = tools.updateinterval;
             timer1.Elapsed += new System.Timers.ElapsedEventHandler(timer1_tick);
             timer1.Enabled = true;
-            Library.WriteErrorLog("Timer active.");
-            timer1_tick(null, null);
+            timer1.Start();
+            // force on start of service to update
+            //timer1_tick(null, null);
+
+            Library.WriteErrorLog("OnStart ok.");
+        }
+
+        private void GetXMLSettings()
+        {
+            string xmlfile = @"settings.xml";
+            int xmlfound = 0;
+
+            try
+            {
+                XmlTextReader reader = new XmlTextReader(AppDomain.CurrentDomain.BaseDirectory + @"\\" + xmlfile);
+                while (reader.Read())
+                {
+                    string n = reader.Name;
+                    xmlfound = 1;
+                    switch (n)
+                    {
+                        case "hash":
+                            tools.hash = reader.ReadString();
+                            Library.WriteErrorLog("hash ok");
+                            break;
+                        case "logtofile":
+                            tools.logtofile = reader.ReadString();
+                            Library.WriteErrorLog("logtofile ok");
+                            break;
+                        case "logtoeventviewer":
+                            tools.logtoEV = reader.ReadString();
+                            Library.WriteErrorLog("logtoEV ok");
+                            break;
+                        case "updateinterval":
+                            tools.updateinterval = Convert.ToInt32(reader.ReadString());
+                            Library.WriteErrorLog("updateinterval ok");
+                            break;
+                    }
+                }
+            }
+            catch (Exception exp)
+            {
+                tools.hash = "";
+                Library.WriteErrorLog("XML: " + exp.Message);
+            }
+            if (0 == xmlfound)
+            {
+                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", "ERROR! hash not found.", EventLogEntryType.Error, 19289);
+                Library.WriteErrorLog("Error in settings.xml.");
+            }
+
         }
 
         private void timer1_tick(object sender, ElapsedEventArgs e)
@@ -86,7 +130,7 @@ namespace DecimalDNSService
             string chave = "";
             try
             {
-                chave = hash; // se for preciso encriptar => Encrypt(PasswordHash + "+" + SaltKey + "+" + userdomain);
+                chave = tools.hash; // se for preciso encriptar => Encrypt(PasswordHash + "+" + SaltKey + "+" + userdomain);
                 Library.WriteErrorLog(publicIP + " " + chave.ToString());
                 //Library.WriteErrorLog(Decrypt(chave));
             }
@@ -96,7 +140,9 @@ namespace DecimalDNSService
             }
 
             Library.WriteErrorLog(t);
-            System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", t + " hash=" + chave, EventLogEntryType.Information, 19283);
+            System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", 
+                t + " hash=" + chave, 
+                EventLogEntryType.Information, 19284);
 
             Library.WriteErrorLog("Tick out.");
 
@@ -105,48 +151,11 @@ namespace DecimalDNSService
         protected override void OnStop()
         {
             timer1.Enabled = false;
+            // no need to update eventviewer because it will
+            // register the service stop
             Library.WriteErrorLog("Service stopped.");
         }
 
-        public static string Encrypt(string plainText)
-        {
-            byte[] plainTextBytes = Encoding.UTF8.GetBytes(plainText);
 
-            byte[] keyBytes = new Rfc2898DeriveBytes(PasswordHash, Encoding.ASCII.GetBytes(SaltKey)).GetBytes(256 / 8);
-            var symmetricKey = new RijndaelManaged() { Mode = CipherMode.CBC, Padding = PaddingMode.Zeros };
-            var encryptor = symmetricKey.CreateEncryptor(keyBytes, Encoding.ASCII.GetBytes(VIKey));
-
-            byte[] cipherTextBytes;
-
-            using (var memoryStream = new MemoryStream())
-            {
-                using (var cryptoStream = new CryptoStream(memoryStream, encryptor, CryptoStreamMode.Write))
-                {
-                    cryptoStream.Write(plainTextBytes, 0, plainTextBytes.Length);
-                    cryptoStream.FlushFinalBlock();
-                    cipherTextBytes = memoryStream.ToArray();
-                    cryptoStream.Close();
-                }
-                memoryStream.Close();
-            }
-            return Convert.ToBase64String(cipherTextBytes);
-        }
-
-        public static string Decrypt(string encryptedText)
-        {
-            byte[] cipherTextBytes = Convert.FromBase64String(encryptedText);
-            byte[] keyBytes = new Rfc2898DeriveBytes(PasswordHash, Encoding.ASCII.GetBytes(SaltKey)).GetBytes(256 / 8);
-            var symmetricKey = new RijndaelManaged() { Mode = CipherMode.CBC, Padding = PaddingMode.None };
-
-            var decryptor = symmetricKey.CreateDecryptor(keyBytes, Encoding.ASCII.GetBytes(VIKey));
-            var memoryStream = new MemoryStream(cipherTextBytes);
-            var cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read);
-            byte[] plainTextBytes = new byte[cipherTextBytes.Length];
-
-            int decryptedByteCount = cryptoStream.Read(plainTextBytes, 0, plainTextBytes.Length);
-            memoryStream.Close();
-            cryptoStream.Close();
-            return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount).TrimEnd("\0".ToCharArray());
-        }
     }
 }
