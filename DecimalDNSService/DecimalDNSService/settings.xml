@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- xml settings for dddns -->
+<dddnssettings>
+  
+  <!-- personal hash to update -->
+  <hash>vmS9bEB9E6bPmgMPBnB1bsrvlotDIHatHW0x9xvqeeuwAtBjwJC5tvQUnFltXg0f</hash>
+  
+  <!-- 1 if logging to file or 0 of not -->
+  <logtofile>1</logtofile>
+  
+  <!-- 1 if log to eventviewer or 0 of not -->
+  <logtoeventviewer>1</logtoeventviewer>
+  
+  <!-- update interval time, in milliseconds - 15000 = 15 * 1000 = 15 seconds-->
+  <updateinterval>15000</updateinterval>
+
+</dddnssettings>
