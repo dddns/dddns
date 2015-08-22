@@ -12,6 +12,8 @@ using System.Configuration;
 using System.Configuration.Install;
 using System.Web;
 using System.Net;
+using System.Security;
+using System.Security.Principal;
 
 namespace DynamicDecimalDNSInstaller
 {
@@ -22,24 +24,29 @@ namespace DynamicDecimalDNSInstaller
             InitializeComponent();
         }
 
+        /// <summary>
+        /// install service
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
 
-            using (WebClient wclient = new WebClient())
-            {
-                System.Collections.Specialized.NameValueCollection reqparm = new System.Collections.Specialized.NameValueCollection();
-                reqparm.Add("hash", "vmS9bEB9E6bPmgMPBnB1bsrvlotDIHatHW0x9xvqeeuwAtBjwJC5tvQUnFltXg0f");
-                byte[] responsebytes = wclient.UploadValues("http://localhost:57440/", "POST", reqparm);
-                string responsebody = Encoding.UTF8.GetString(responsebytes);
-
-                label3.Text=responsebody;
-            }
+           
         }
                 
         private void button2_Click(object sender, EventArgs e)
         {
+            label1.Text = IsElevated.ToString();
         }
 
+        public static bool IsElevated
+        {
+            get
+            {
+                return new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator);
+            }
+        }
         private static int InstallService()
         {
             
@@ -52,6 +59,17 @@ namespace DynamicDecimalDNSInstaller
           
 
             return 0;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //if (!IsElevated)
+            //{
+            //    MessageBox.Show("Run as administrator with elevated permissions.");
+            //    Application.Exit();
+            //}
+            txtHash.Focus();
+
         }
     }
 }
