@@ -14,6 +14,7 @@ using System.Web;
 using System.Net;
 using System.Security;
 using System.Security.Principal;
+using System.Diagnostics;
 
 namespace DynamicDecimalDNSInstaller
 {
@@ -31,13 +32,29 @@ namespace DynamicDecimalDNSInstaller
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-
-           
+            Executa("install.bat");
         }
                 
+        private void Executa(string filename)
+        {
+            Process p = new Process();
+            // Redirect the output stream of the child process.
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.FileName = filename;
+            p.Start();
+            // Do not wait for the child process to exit before
+            // reading to the end of its redirected stream.
+            // p.WaitForExit();
+            // Read the output stream first and then wait.
+            string output = p.StandardOutput.ReadToEnd();
+            p.WaitForExit();
+            txtOutput.Text = output;
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Text = IsElevated.ToString();
+            Executa("startservice.bat");
         }
 
         public static bool IsElevated
@@ -70,6 +87,16 @@ namespace DynamicDecimalDNSInstaller
             //}
             txtHash.Focus();
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Executa("uninstall.bat");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Executa("stopservice.bat");
         }
     }
 }

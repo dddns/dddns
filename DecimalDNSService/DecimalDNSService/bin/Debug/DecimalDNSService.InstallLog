@@ -1149,3 +1149,235 @@ Affected parameters are:
 Removing EventLog source DecimalDNSService.
 Service DecimalDNSService is being removed from the system...
 Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Warning: The source DecimalDNSService is not registered on the local machine.
+Service DecimalDNSService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Installing service DecimalDNSService...
+Creating EventLog source DecimalDNSService in log Application...
+Rolling back assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Restoring event log to previous state for source DecimalDNSService.
+An exception occurred during the Rollback phase of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Installing service DecimalDNSService...
+Creating EventLog source DecimalDNSService in log Application...
+Rolling back assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Restoring event log to previous state for source DecimalDNSService.
+An exception occurred during the Rollback phase of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.
+Installing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Installing service DecimalDNSService...
+Service DecimalDNSService has been successfully installed.
+Creating EventLog source DecimalDNSService in log Application...
+Committing assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Uninstalling assembly 'C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe
+   logfile = C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.InstallLog
+Removing EventLog source DecimalDNSService.
+Service DecimalDNSService is being removed from the system...
+Service DecimalDNSService was successfully removed from the system.

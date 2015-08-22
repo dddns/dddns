@@ -66,6 +66,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\install.bat" />
+    <None Include="bin\Debug\InstallUtil.exe.config" />
+    <None Include="bin\Debug\InstallUtil.InstallLog" />
+    <None Include="bin\Debug\startservice.bat" />
+    <None Include="bin\Debug\stopservice.bat" />
+    <None Include="bin\Debug\uninstall.bat" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +81,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\InstallUtil.exe" />
+    <Content Include="bin\Debug\InstallUtilLib.dll" />
+    <Content Include="bin\Debug\settings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

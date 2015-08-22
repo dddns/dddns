@@ -42,7 +42,7 @@
             this.txtPublicIP = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtOutput = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -92,6 +92,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Stop service";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -101,6 +102,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "UNInstall service";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -171,13 +173,13 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Log file";
             // 
-            // textBox7
+            // txtOutput
             // 
-            this.textBox7.Location = new System.Drawing.Point(367, 32);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(419, 203);
-            this.textBox7.TabIndex = 20;
+            this.txtOutput.Location = new System.Drawing.Point(367, 32);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.Size = new System.Drawing.Size(419, 203);
+            this.txtOutput.TabIndex = 20;
             // 
             // label7
             // 
@@ -218,7 +220,7 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPublicIP);
             this.Controls.Add(this.label5);
@@ -257,7 +259,7 @@
         private System.Windows.Forms.TextBox txtPublicIP;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
