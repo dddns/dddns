@@ -80,11 +80,11 @@ namespace DynamicDecimalDNSInstaller
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //if (!IsElevated)
-            //{
-            //    MessageBox.Show("Run as administrator with elevated permissions.");
-            //    Application.Exit();
-            //}
+            if (!IsElevated)
+            {
+                MessageBox.Show("Run as administrator with elevated permissions.");
+                Application.Exit();
+            }
             txtHash.Focus();
 
         }
