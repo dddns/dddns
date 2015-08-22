@@ -149,7 +149,7 @@ namespace DecimalDNSService
 
             Library.WriteErrorLog(t);
             System.Diagnostics.EventLog.WriteEntry("DecimalDNSService",
-                t + " hash=" + chave,
+                t + " hash=" + publicIP + "+" + chave.ToString(),
                 EventLogEntryType.Information, 
                 19284);
 
