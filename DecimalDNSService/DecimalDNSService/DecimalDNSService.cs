@@ -91,6 +91,14 @@ namespace DecimalDNSService
                             tools.updateinterval = Convert.ToInt32(reader.ReadString());
                             Library.WriteErrorLog("updateinterval ok");
                             break;
+                        case "serverurl":
+                            tools.serverurl = reader.ReadString();
+                            Library.WriteErrorLog("serverurl ok");
+                            break;
+                        case "publicip":
+                            tools.publicip = reader.ReadString();
+                            Library.WriteErrorLog("publicip ok");
+                            break;
                     }
                 }
             }
@@ -112,7 +120,7 @@ namespace DecimalDNSService
             Library.WriteErrorLog("Tick in.");
 
             string t = "";
-            string GetPublicIPURL = "http://decimal.pt/get.php"; // decimal.pt/get.php
+            string GetPublicIPURL = tools.publicip; // "http://decimal.pt/get.php"; // decimal.pt/get.php
 
             //IPAddress noip;
             //StringBuilder str = new StringBuilder("");
@@ -131,7 +139,7 @@ namespace DecimalDNSService
             try
             {
                 chave = tools.hash; // se for preciso encriptar => Encrypt(PasswordHash + "+" + SaltKey + "+" + userdomain);
-                Library.WriteErrorLog(publicIP + " " + chave.ToString());
+                Library.WriteErrorLog(publicIP + "+" + chave.ToString());
                 //Library.WriteErrorLog(Decrypt(chave));
             }
             catch (Exception exp)
@@ -142,13 +150,14 @@ namespace DecimalDNSService
             Library.WriteErrorLog(t);
             System.Diagnostics.EventLog.WriteEntry("DecimalDNSService",
                 t + " hash=" + chave,
-                EventLogEntryType.Information, 19284);
+                EventLogEntryType.Information, 
+                19284);
 
             // POST
-            // https://msdn.microsoft.com/en-us/library/debx8sh9.aspx
+            // https://msdn.microsoft.com/en-us/library/456dfw4f%28v=vs.110%29.aspx
 
-
-            WebRequest request = WebRequest.Create("http://adelinoaraujo.com/post.php?hash=" + tools.hash);
+            //WebRequest request = WebRequest.Create("http://adelinoaraujo.com/post.php?hash=" + tools.hash);
+            WebRequest request = WebRequest.Create(tools.serverurl + publicIP + "+" + chave.ToString());
             request.Credentials = CredentialCache.DefaultCredentials;
             WebResponse response = request.GetResponse();
             Console.WriteLine(((HttpWebResponse)response).StatusDescription);
@@ -158,30 +167,6 @@ namespace DecimalDNSService
             Library.WriteErrorLog(responseFromServer);
             reader.Close();
             response.Close();
-
-
-
-            //WebRequest request = WebRequest.Create("http://adelinoaraujo.com/post.php");
-            //request.Method = "POST";
-            //string postData = "?hash=" + tools.hash;
-            //byte[] byteArray = Encoding.UTF8.GetBytes(postData);
-            //request.ContentType = "application/x-www-form-urlencoded";
-            //request.ContentLength = byteArray.Length;
-            //Stream dataStream = request.GetRequestStream();
-            //dataStream.Write(byteArray, 0, byteArray.Length);
-            //dataStream.Close();
-
-            //WebResponse response = request.GetResponse();
-            //Console.WriteLine(((HttpWebResponse)response).StatusDescription);
-            //dataStream = response.GetResponseStream();
-            //StreamReader reader = new StreamReader(dataStream);
-            //string responseFromServer = reader.ReadToEnd();
-
-            //Library.WriteErrorLog(responseFromServer);
-
-            //reader.Close();
-            //dataStream.Close();
-            //response.Close();
 
             // END POST
 

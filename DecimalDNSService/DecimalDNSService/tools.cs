@@ -20,5 +20,11 @@
         // default is 5 minutes (5 times 60 times 1000)
         // but updateinterval is read from settings.xml too
         public static int updateinterval = 5 * 60 * 1000;
+
+        // server that will receive the IP+hash
+        public static string serverurl = "";
+
+        // php page that will give the public IP
+        public static string publicip = "";
     }
 }
