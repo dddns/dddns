@@ -14,3 +14,6 @@ C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\Dyna
 C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.Properties.Resources.resources
 C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.csproj.GenerateResource.Cache
 C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.AboutBox.resources
+C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\bin\Debug\DynamicDecimalDNSInstaller.exe.CodeAnalysisLog.xml
+C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\bin\Debug\DynamicDecimalDNSInstaller.exe.lastcodeanalysissucceeded
+C:\development\dddns\DecimalDNSService\DynamicDecimalDNSInstaller\obj\Debug\DynamicDecimalDNSInstaller.csprojResolveAssemblyReference.cache

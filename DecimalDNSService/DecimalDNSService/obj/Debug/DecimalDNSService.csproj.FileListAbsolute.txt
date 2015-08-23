@@ -17,3 +17,6 @@ C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSSer
 C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.csproj.GenerateResource.Cache
 C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.exe
 C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.pdb
+C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe.CodeAnalysisLog.xml
+C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.exe.lastcodeanalysissucceeded
+C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.csprojResolveAssemblyReference.cache

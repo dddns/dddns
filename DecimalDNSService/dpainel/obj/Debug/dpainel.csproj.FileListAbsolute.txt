@@ -9,3 +9,6 @@ C:\development\dddns\DecimalDNSService\dpainel\bin\dpainel.dll
 C:\development\dddns\DecimalDNSService\dpainel\bin\dpainel.pdb
 C:\development\dddns\DecimalDNSService\dpainel\obj\Debug\dpainel.dll
 C:\development\dddns\DecimalDNSService\dpainel\obj\Debug\dpainel.pdb
+C:\development\dddns\DecimalDNSService\dpainel\bin\dpainel.dll.CodeAnalysisLog.xml
+C:\development\dddns\DecimalDNSService\dpainel\bin\dpainel.dll.lastcodeanalysissucceeded
+C:\development\dddns\DecimalDNSService\dpainel\obj\Debug\dpainel.csprojResolveAssemblyReference.cache
