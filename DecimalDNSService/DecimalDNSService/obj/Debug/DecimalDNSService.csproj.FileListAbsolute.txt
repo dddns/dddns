@@ -13,7 +13,6 @@ C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSSer
 C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\DecimalDNSService.pdb
 C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\System.Net.Http.dll
 C:\development\dddns\DecimalDNSService\DecimalDNSService\bin\Debug\System.Net.Http.xml
-C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.csprojResolveAssemblyReference.cache
 C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.ProjectInstaller.resources
 C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.csproj.GenerateResource.Cache
 C:\development\dddns\DecimalDNSService\DecimalDNSService\obj\Debug\DecimalDNSService.exe

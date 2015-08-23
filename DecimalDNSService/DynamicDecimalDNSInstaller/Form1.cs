@@ -43,16 +43,16 @@ namespace DynamicDecimalDNSInstaller
             writer.Indentation = 2;
             writer.WriteStartElement("dddnssettings");
 
-            writer.WriteStartElement("hash");
-            writer.WriteString(txtHash.Text);
-            writer.WriteEndElement();
-
             writer.WriteStartElement("logtofile");
             writer.WriteString((cbLogFile.Checked ? "1" : "0"));
             writer.WriteEndElement();
 
             writer.WriteStartElement("logtoeventviewer");
             writer.WriteString((cbLogEV.Checked ? "1" : "0"));
+            writer.WriteEndElement();
+
+            writer.WriteStartElement("hash");
+            writer.WriteString(txtHash.Text);
             writer.WriteEndElement();
 
             writer.WriteStartElement("updateinterval");
@@ -74,16 +74,8 @@ namespace DynamicDecimalDNSInstaller
             writer.WriteEndDocument();
             writer.Close();
 
-            // bug: verificar isto
-            // OU FAZER: icacls *.* /grant "NT AUTHORITY\LOCAL SERVICE":(f)
-            //string fileName = "DecimalDNSService.exe";
-            //SetNTFSPermission(AppDomain.CurrentDomain.BaseDirectory +
-            //                fileName, @"NT AUTHORITY\LOCAL SERVICE",
-            //                FileSystemRights.FullControl,
-            //                AccessControlType.Allow); // set "local service" to FULL for our service
-
             Executa("setpermission.bat", "Setting file security permission right...", "");
-            Executa("install.bat", "Installing service, please wait...", "An exception occurred during the Install phase");
+            Executa("install.bat", "Installing service, please wait...", "Service DecimalDNSService has been successfully installed");
         }
 
         private void SetNTFSPermission(string fileName, string account, FileSystemRights rights, AccessControlType controlType)
@@ -107,6 +99,7 @@ namespace DynamicDecimalDNSInstaller
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = filename;
             p.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
+            p.StartInfo.Verb = "runas";
             p.Start();
             // Do not wait for the child process to exit before
             // reading to the end of its redirected stream.

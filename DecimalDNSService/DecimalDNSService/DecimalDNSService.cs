@@ -36,6 +36,7 @@ namespace DecimalDNSService
         protected override void OnStart(string[] args)
         {
             GetXMLSettings();
+
             Library.WriteErrorLog("Service started.");
 
             try
@@ -75,17 +76,20 @@ namespace DecimalDNSService
                     xmlfound = 1;
                     switch (n)
                     {
-                        case "hash":
-                            tools.hash = reader.ReadString();
-                            Library.WriteErrorLog("hash ok");
-                            break;
+                        // logtofile should be the first to be read from the xml
+                        // because if it is !=1 we should not log to file
                         case "logtofile":
                             tools.logtofile = reader.ReadString();
                             Library.WriteErrorLog("logtofile ok");
                             break;
+                        // logtoeventviewer should be second to load
                         case "logtoeventviewer":
                             tools.logtoEV = reader.ReadString();
                             Library.WriteErrorLog("logtoEV ok");
+                            break;
+                        case "hash":
+                            tools.hash = reader.ReadString();
+                            Library.WriteErrorLog("hash ok");
                             break;
                         case "updateinterval":
                             tools.updateinterval = Convert.ToInt32(reader.ReadString());
