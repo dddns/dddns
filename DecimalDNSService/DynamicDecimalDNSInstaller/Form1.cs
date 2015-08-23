@@ -35,6 +35,8 @@ namespace DynamicDecimalDNSInstaller
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+            File.Delete(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml");
+
             XmlTextWriter writer = new XmlTextWriter(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml", System.Text.Encoding.UTF8);
             writer.WriteStartDocument(true);
             writer.Formatting = Formatting.Indented;
@@ -80,27 +82,31 @@ namespace DynamicDecimalDNSInstaller
             //                FileSystemRights.FullControl,
             //                AccessControlType.Allow); // set "local service" to FULL for our service
 
-            Executa("setpermission.bat");
-            Executa("install.bat");
+            Executa("setpermission.bat", "Setting file security permission right...", "");
+            Executa("install.bat", "Installing service, please wait...", "An exception occurred during the Install phase");
         }
 
-        private void SetNTFSPermission(string fileName, string account,FileSystemRights rights, AccessControlType controlType)
+        private void SetNTFSPermission(string fileName, string account, FileSystemRights rights, AccessControlType controlType)
         {
             FileSecurity fSecurity = File.GetAccessControl(fileName);
-            fSecurity.AddAccessRule(new FileSystemAccessRule(account,rights, controlType));
+            fSecurity.AddAccessRule(new FileSystemAccessRule(account, rights, controlType));
             File.SetAccessControl(fileName, fSecurity);
         }
 
-        //
-        // adicionar "local service" icacls senão não tem permissão
-
-        private void Executa(string filename)
+        private void Executa(string filename, string message, string sucesstxt)
         {
+            txtOutput.BackColor = Color.White;
+            StringBuilder sb = new StringBuilder(message + "\n");
+            txtOutput.Text = sb.ToString();
+            Application.DoEvents();
+
             Process p = new Process();
             // Redirect the output stream of the child process.
             p.StartInfo.UseShellExecute = false;
+            p.StartInfo.CreateNoWindow = true;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = filename;
+            p.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
             p.Start();
             // Do not wait for the child process to exit before
             // reading to the end of its redirected stream.
@@ -108,12 +114,32 @@ namespace DynamicDecimalDNSInstaller
             // Read the output stream first and then wait.
             string output = p.StandardOutput.ReadToEnd();
             p.WaitForExit();
-            txtOutput.Text = output;
+
+            sb.Append(output + "\n" + "Done.");
+            txtOutput.Text = sb.ToString();
+
+            txtOutput.Focus();
+            txtOutput.SelectionStart = txtOutput.Text.Length;
+            txtOutput.ScrollToCaret();
+
+            // check for sucess strings
+            if (true == txtOutput.Text.Contains(sucesstxt)) txtOutput.BackColor = Color.LightGreen; else txtOutput.BackColor = Color.LightCoral;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Executa("startservice.bat");
+            Executa("startservice.bat", "Starting service, please wait...", "service was started successfully");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Executa("uninstall.bat", "Uninstall of service, please wait...", "was successfully removed from the system");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Executa("stopservice.bat", "Stopping the service, please wait...", "service was stopped successfully");
         }
 
         public static bool IsElevated
@@ -139,23 +165,17 @@ namespace DynamicDecimalDNSInstaller
 
         private void Form1_Load(object sender, EventArgs e)
         {
+#if DEBUG
+#else
             if (!IsElevated)
             {
                 MessageBox.Show("Run as administrator with elevated permissions.");
                 Application.Exit();
             }
             txtHash.Focus();
-
+#endif
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Executa("uninstall.bat");
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Executa("stopservice.bat");
-        }
     }
 }
