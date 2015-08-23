@@ -18,11 +18,36 @@ using System.Diagnostics;
 using System.IO;
 using System.Xml;
 using System.Security.AccessControl;
+using DecimalDNSService;
+using System.Runtime.InteropServices;
 
 namespace DynamicDecimalDNSInstaller
 {
     public partial class Form1 : Form
     {
+        private const uint PM_REMOVE = 0x1;
+        private const uint WM_MOUSEFIRST = 0x200;
+        private const uint WM_MOUSELAST = 0x209;
+
+        //// to clear queued mouse events
+        //private struct Point
+        //{
+        //    long X;
+        //    long Y;
+        //}
+        //private struct Message
+        //{
+        //    long hwnd;
+        //    long message;
+        //    long wParam;
+        //    long lParam;
+        //    long time;
+        //    Point pt;
+        //}
+        //[DllImport("coredll")]
+        //private extern static bool PeekMessage(out Message Msg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax, uint wRemoveMsg);
+        //// to clear queued mouse events
+
         public Form1()
         {
             InitializeComponent();
@@ -35,48 +60,78 @@ namespace DynamicDecimalDNSInstaller
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            File.Delete(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml");
+            ButtonLockUnlock();
 
-            XmlTextWriter writer = new XmlTextWriter(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml", System.Text.Encoding.UTF8);
-            writer.WriteStartDocument(true);
-            writer.Formatting = Formatting.Indented;
-            writer.Indentation = 2;
-            writer.WriteStartElement("dddnssettings");
+            try
+            {
+                File.Delete(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml");
+            }
+            catch (Exception exp)
+            {
+                if ("1" == tools.logtofile) tools.WriteErrorLog(exp.Message);
+            }
 
-            writer.WriteStartElement("logtofile");
-            writer.WriteString((cbLogFile.Checked ? "1" : "0"));
-            writer.WriteEndElement();
+            try
+            {
+                XmlTextWriter writer = new XmlTextWriter(AppDomain.CurrentDomain.BaseDirectory + @"\settings.xml", System.Text.Encoding.UTF8);
+                writer.WriteStartDocument(true);
+                writer.Formatting = Formatting.Indented;
+                writer.Indentation = 2;
+                writer.WriteStartElement("dddnssettings");
 
-            writer.WriteStartElement("logtoeventviewer");
-            writer.WriteString((cbLogEV.Checked ? "1" : "0"));
-            writer.WriteEndElement();
+                writer.WriteStartElement("logtofile");
+                writer.WriteString((cbLogFile.Checked ? "1" : "0"));
+                writer.WriteEndElement();
 
-            writer.WriteStartElement("hash");
-            writer.WriteString(txtHash.Text);
-            writer.WriteEndElement();
+                writer.WriteStartElement("logtoeventviewer");
+                writer.WriteString((cbLogEV.Checked ? "1" : "0"));
+                writer.WriteEndElement();
 
-            writer.WriteStartElement("updateinterval");
-            int i = 0;
-            int.TryParse(txtInterval.Text, out i);
+                writer.WriteStartElement("hash");
+                writer.WriteString(txtHash.Text);
+                writer.WriteEndElement();
 
-            writer.WriteString((i * 60 * 1000).ToString());
-            writer.WriteEndElement();
+                writer.WriteStartElement("updateinterval");
+                int i = 0;
+                int.TryParse(txtInterval.Text, out i);
 
-            writer.WriteStartElement("serverurl");
-            writer.WriteString(txtServerURL.Text);
-            writer.WriteEndElement();
+                writer.WriteString((i * 60 * 1000).ToString());
+                writer.WriteEndElement();
 
-            writer.WriteStartElement("publicip");
-            writer.WriteString(txtPublicIP.Text);
-            writer.WriteEndElement();
+                writer.WriteStartElement("serverurl");
+                writer.WriteString(txtServerURL.Text);
+                writer.WriteEndElement();
 
-            writer.WriteEndElement();
-            writer.WriteEndDocument();
-            writer.Close();
+                writer.WriteStartElement("publicip");
+                writer.WriteString(txtPublicIP.Text);
+                writer.WriteEndElement();
+
+                writer.WriteEndElement();
+                writer.WriteEndDocument();
+                writer.Close();
+            }
+            catch (Exception exp)
+            {
+                if ("1" == tools.logtofile)
+                {
+                    tools.WriteErrorLog(exp.Message);
+                }
+            }
 
             Executa("setpermission.bat", "Setting file security permission right...", "");
             Executa("install.bat", "Installing service, please wait...", "Service DecimalDNSService has been successfully installed");
+            ButtonLockUnlock();
         }
+
+        private void ButtonLockUnlock()
+        {
+            btnInstall.Enabled = !btnInstall.Enabled;
+            btnStartService.Enabled = !btnStartService.Enabled;
+            btnStopService.Enabled = !btnStopService.Enabled;
+            btnUnInstall.Enabled = !btnUnInstall.Enabled;
+            Application.DoEvents();
+        }
+
 
         private void SetNTFSPermission(string fileName, string account, FileSystemRights rights, AccessControlType controlType)
         {
@@ -114,6 +169,7 @@ namespace DynamicDecimalDNSInstaller
             // Read the output stream first and then wait.
             string output = p.StandardOutput.ReadToEnd();
             p.WaitForExit();
+            p.Dispose();
 
             sb.Append(output + "\n" + "Done.");
             txtOutput.Text = sb.ToString();
@@ -124,22 +180,28 @@ namespace DynamicDecimalDNSInstaller
 
             // check for sucess strings
             if (true == txtOutput.Text.Contains(sucesstxt)) txtOutput.BackColor = Color.LightGreen; else txtOutput.BackColor = Color.LightCoral;
-
+            sb.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ButtonLockUnlock();
             Executa("startservice.bat", "Starting service, please wait...", "service was started successfully");
+            ButtonLockUnlock();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            ButtonLockUnlock();
             Executa("uninstall.bat", "Uninstall of service, please wait...", "was successfully removed from the system");
+            ButtonLockUnlock();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            ButtonLockUnlock();
             Executa("stopservice.bat", "Stopping the service, please wait...", "service was stopped successfully");
+            ButtonLockUnlock();
         }
 
         public static bool IsElevated
@@ -148,19 +210,6 @@ namespace DynamicDecimalDNSInstaller
             {
                 return new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator);
             }
-        }
-        private static int InstallService()
-        {
-
-
-            return 0;
-        }
-
-        private static int UninstallService()
-        {
-
-
-            return 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -180,6 +229,7 @@ namespace DynamicDecimalDNSInstaller
         {
             Form about = new AboutBox();
             about.ShowDialog();
+            about.Dispose();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -189,7 +239,13 @@ namespace DynamicDecimalDNSInstaller
 
         private void loadFromDiskToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            tools.GetXMLSettings();
+            txtHash.Text = tools.hash;
+            cbLogFile.Checked = ("1" == tools.logtofile ? true : false);
+            cbLogEV.Checked = ("1" == tools.logtoEV ? true : false);
+            txtInterval.Text = (tools.updateinterval / 60 / 1000).ToString();
+            txtServerURL.Text = tools.serverurl;
+            txtPublicIP.Text = tools.publicip;
         }
     }
 }

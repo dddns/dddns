@@ -9,4 +9,3 @@ C:\development\dddns\DecimalDNSService\dpainel\bin\dpainel.dll
 C:\development\dddns\DecimalDNSService\dpainel\bin\dpainel.pdb
 C:\development\dddns\DecimalDNSService\dpainel\obj\Debug\dpainel.dll
 C:\development\dddns\DecimalDNSService\dpainel\obj\Debug\dpainel.pdb
-C:\development\dddns\DecimalDNSService\dpainel\obj\Debug\dpainel.csprojResolveAssemblyReference.cache

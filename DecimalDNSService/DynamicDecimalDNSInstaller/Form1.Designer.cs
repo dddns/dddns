@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.txtHash = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnInstall = new System.Windows.Forms.Button();
+            this.btnStartService = new System.Windows.Forms.Button();
+            this.btnStopService = new System.Windows.Forms.Button();
+            this.btnUnInstall = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtInterval = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +51,6 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadFromDiskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.revertToDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,45 +73,45 @@
             this.txtHash.Size = new System.Drawing.Size(708, 20);
             this.txtHash.TabIndex = 1;
             // 
-            // button1
+            // btnInstall
             // 
-            this.button1.Location = new System.Drawing.Point(78, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Install service";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnInstall.Location = new System.Drawing.Point(78, 192);
+            this.btnInstall.Name = "btnInstall";
+            this.btnInstall.Size = new System.Drawing.Size(157, 29);
+            this.btnInstall.TabIndex = 6;
+            this.btnInstall.Text = "Install service";
+            this.btnInstall.UseVisualStyleBackColor = true;
+            this.btnInstall.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnStartService
             // 
-            this.button2.Location = new System.Drawing.Point(241, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 29);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Start service";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnStartService.Location = new System.Drawing.Point(241, 192);
+            this.btnStartService.Name = "btnStartService";
+            this.btnStartService.Size = new System.Drawing.Size(107, 29);
+            this.btnStartService.TabIndex = 7;
+            this.btnStartService.Text = "Start service";
+            this.btnStartService.UseVisualStyleBackColor = true;
+            this.btnStartService.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnStopService
             // 
-            this.button3.Location = new System.Drawing.Point(241, 227);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 29);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Stop service";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnStopService.Location = new System.Drawing.Point(241, 227);
+            this.btnStopService.Name = "btnStopService";
+            this.btnStopService.Size = new System.Drawing.Size(107, 29);
+            this.btnStopService.TabIndex = 9;
+            this.btnStopService.Text = "Stop service";
+            this.btnStopService.UseVisualStyleBackColor = true;
+            this.btnStopService.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnUnInstall
             // 
-            this.button4.Location = new System.Drawing.Point(78, 227);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(157, 29);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "UNInstall service";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnUnInstall.Location = new System.Drawing.Point(78, 227);
+            this.btnUnInstall.Name = "btnUnInstall";
+            this.btnUnInstall.Size = new System.Drawing.Size(157, 29);
+            this.btnUnInstall.TabIndex = 8;
+            this.btnUnInstall.Text = "UNInstall service";
+            this.btnUnInstall.UseVisualStyleBackColor = true;
+            this.btnUnInstall.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -246,8 +245,7 @@
             // loadSettingsToolStripMenuItem
             // 
             this.loadSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadFromDiskToolStripMenuItem,
-            this.revertToDefaultToolStripMenuItem});
+            this.loadFromDiskToolStripMenuItem});
             this.loadSettingsToolStripMenuItem.Name = "loadSettingsToolStripMenuItem";
             this.loadSettingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadSettingsToolStripMenuItem.Text = "&Settings";
@@ -255,15 +253,9 @@
             // loadFromDiskToolStripMenuItem
             // 
             this.loadFromDiskToolStripMenuItem.Name = "loadFromDiskToolStripMenuItem";
-            this.loadFromDiskToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.loadFromDiskToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.loadFromDiskToolStripMenuItem.Text = "Load from disk";
             this.loadFromDiskToolStripMenuItem.Click += new System.EventHandler(this.loadFromDiskToolStripMenuItem_Click);
-            // 
-            // revertToDefaultToolStripMenuItem
-            // 
-            this.revertToDefaultToolStripMenuItem.Name = "revertToDefaultToolStripMenuItem";
-            this.revertToDefaultToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.revertToDefaultToolStripMenuItem.Text = "Revert to default";
             // 
             // exitToolStripMenuItem
             // 
@@ -283,7 +275,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -305,10 +297,10 @@
             this.Controls.Add(this.txtInterval);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStopService);
+            this.Controls.Add(this.btnUnInstall);
+            this.Controls.Add(this.btnStartService);
+            this.Controls.Add(this.btnInstall);
             this.Controls.Add(this.txtHash);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -331,10 +323,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHash;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnInstall;
+        private System.Windows.Forms.Button btnStartService;
+        private System.Windows.Forms.Button btnStopService;
+        private System.Windows.Forms.Button btnUnInstall;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtInterval;
         private System.Windows.Forms.Label label3;
@@ -351,7 +343,6 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadFromDiskToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem revertToDefaultToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
