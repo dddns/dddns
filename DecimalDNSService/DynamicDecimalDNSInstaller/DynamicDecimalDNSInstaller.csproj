@@ -76,6 +76,15 @@
     <None Include="bin\Debug\startservice.bat" />
     <None Include="bin\Debug\stopservice.bat" />
     <None Include="bin\Debug\uninstall.bat" />
+    <None Include="bin\Release\DecimalDNSService.InstallLog" />
+    <None Include="bin\Release\install.bat" />
+    <None Include="bin\Release\InstallUtil.exe.config" />
+    <None Include="bin\Release\InstallUtil.InstallLog" />
+    <None Include="bin\Release\setpermission.bat" />
+    <None Include="bin\Release\setup.bat" />
+    <None Include="bin\Release\startservice.bat" />
+    <None Include="bin\Release\stopservice.bat" />
+    <None Include="bin\Release\uninstall.bat" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +100,12 @@
     <Content Include="bin\Debug\InstallUtil.exe" />
     <Content Include="bin\Debug\InstallUtilLib.dll" />
     <Content Include="bin\Debug\settings.xml" />
+    <Content Include="bin\Release\DecimalDNSService.exe" />
+    <Content Include="bin\Release\DynamicDecimalDNSInstaller.exe" />
+    <Content Include="bin\Release\InstallUtil.exe" />
+    <Content Include="bin\Release\InstallUtilLib.dll" />
+    <Content Include="bin\Release\LogFile.txt" />
+    <Content Include="bin\Release\settings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
