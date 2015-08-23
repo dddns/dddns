@@ -35,20 +35,21 @@ namespace DecimalDNSService
 
         protected override void OnStart(string[] args)
         {
-            GetXMLSettings();
+            tools.GetXMLSettings();
 
-            Library.WriteErrorLog("Service started.");
+            tools.WriteErrorLog("Service started.");
 
             try
             {
-                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService",
-                    "DecimalDNSService started working.",
-                    EventLogEntryType.Information,
-                    19283);
+                if ("1" == tools.logtoEV)
+                    EventLog.WriteEntry("DecimalDNSService",
+                                        "DecimalDNSService started working.",
+                                        EventLogEntryType.Information,
+                                        19283);
             }
             catch (Exception exp)
             {
-                Library.WriteErrorLog("Error writting to eventlog." + exp.Message);
+                tools.WriteErrorLog("Error writting to eventlog." + exp.Message);
             }
 
             timer1 = new Timer();
@@ -59,69 +60,13 @@ namespace DecimalDNSService
             // force on start of service to update
             timer1_tick(null, null);
 
-            Library.WriteErrorLog("OnStart ok.");
+            tools.WriteErrorLog("OnStart ok.");
         }
 
-        private void GetXMLSettings()
-        {
-            string xmlfile = @"settings.xml";
-            int xmlfound = 0;
-
-            try
-            {
-                XmlTextReader reader = new XmlTextReader(AppDomain.CurrentDomain.BaseDirectory + @"\\" + xmlfile);
-                while (reader.Read())
-                {
-                    string n = reader.Name;
-                    xmlfound = 1;
-                    switch (n)
-                    {
-                        // logtofile should be the first to be read from the xml
-                        // because if it is !=1 we should not log to file
-                        case "logtofile":
-                            tools.logtofile = reader.ReadString();
-                            Library.WriteErrorLog("logtofile ok");
-                            break;
-                        // logtoeventviewer should be second to load
-                        case "logtoeventviewer":
-                            tools.logtoEV = reader.ReadString();
-                            Library.WriteErrorLog("logtoEV ok");
-                            break;
-                        case "hash":
-                            tools.hash = reader.ReadString();
-                            Library.WriteErrorLog("hash ok");
-                            break;
-                        case "updateinterval":
-                            tools.updateinterval = Convert.ToInt32(reader.ReadString());
-                            Library.WriteErrorLog("updateinterval ok");
-                            break;
-                        case "serverurl":
-                            tools.serverurl = reader.ReadString();
-                            Library.WriteErrorLog("serverurl ok");
-                            break;
-                        case "publicip":
-                            tools.publicip = reader.ReadString();
-                            Library.WriteErrorLog("publicip ok");
-                            break;
-                    }
-                }
-            }
-            catch (Exception exp)
-            {
-                tools.hash = "";
-                Library.WriteErrorLog("XML: " + exp.Message);
-            }
-            if (0 == xmlfound)
-            {
-                System.Diagnostics.EventLog.WriteEntry("DecimalDNSService", "ERROR! hash not found.", EventLogEntryType.Error, 19289);
-                Library.WriteErrorLog("Error in settings.xml.");
-            }
-
-        }
 
         private void timer1_tick(object sender, ElapsedEventArgs e)
         {
-            Library.WriteErrorLog("Tick in.");
+            tools.WriteErrorLog("Tick in.");
 
             string t = "";
             string GetPublicIPURL = tools.publicip; // "http://decimal.pt/get.php"; // decimal.pt/get.php
@@ -143,19 +88,20 @@ namespace DecimalDNSService
             try
             {
                 chave = tools.hash; // se for preciso encriptar => Encrypt(PasswordHash + "+" + SaltKey + "+" + userdomain);
-                Library.WriteErrorLog(publicIP + "+" + chave.ToString());
-                //Library.WriteErrorLog(Decrypt(chave));
+                tools.WriteErrorLog(publicIP + "+" + chave.ToString());
+                //tools.WriteErrorLog(Decrypt(chave));
             }
             catch (Exception exp)
             {
-                Library.WriteErrorLog(exp.Message);
+                tools.WriteErrorLog(exp.Message);
             }
 
-            Library.WriteErrorLog(t);
-            System.Diagnostics.EventLog.WriteEntry("DecimalDNSService",
-                t + " hash=" + publicIP + "+" + chave.ToString(),
-                EventLogEntryType.Information, 
-                19284);
+            tools.WriteErrorLog(t);
+            if ("1" == tools.logtoEV)
+                EventLog.WriteEntry("DecimalDNSService",
+                                    t + " hash=" + publicIP + "+" + chave.ToString(),
+                                    EventLogEntryType.Information,
+                                    19284);
 
             // POST
             // https://msdn.microsoft.com/en-us/library/456dfw4f%28v=vs.110%29.aspx
@@ -168,13 +114,13 @@ namespace DecimalDNSService
             Stream dataStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
             string responseFromServer = reader.ReadToEnd();
-            Library.WriteErrorLog(responseFromServer);
+            tools.WriteErrorLog(responseFromServer);
             reader.Close();
             response.Close();
 
             // END POST
 
-            Library.WriteErrorLog("Tick out.");
+            tools.WriteErrorLog("Tick out.");
         }
 
         protected override void OnStop()
@@ -182,7 +128,7 @@ namespace DecimalDNSService
             timer1.Enabled = false;
             // no need to update eventviewer because it will
             // register the service stop
-            Library.WriteErrorLog("Service stopped.");
+            tools.WriteErrorLog("Service stopped.");
         }
 
 

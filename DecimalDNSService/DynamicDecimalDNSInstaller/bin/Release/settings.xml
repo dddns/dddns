@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<dddnssettings>
-  <logtofile>1</logtofile>
-  <logtoeventviewer>1</logtoeventviewer>
-  <hash>435454545</hash>
-  <updateinterval>3600000</updateinterval>
-  <serverurl>http://adelinoaraujo.com/post.php?hash=</serverurl>
-  <publicip>http://decimal.pt/get.php</publicip>
-</dddnssettings>

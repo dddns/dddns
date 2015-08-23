@@ -47,12 +47,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cbLogFile = new System.Windows.Forms.CheckBox();
             this.cbLogEV = new System.Windows.Forms.CheckBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadFromDiskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.revertToDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
@@ -60,14 +69,14 @@
             // 
             // txtHash
             // 
-            this.txtHash.Location = new System.Drawing.Point(78, 6);
+            this.txtHash.Location = new System.Drawing.Point(78, 27);
             this.txtHash.Name = "txtHash";
             this.txtHash.Size = new System.Drawing.Size(708, 20);
             this.txtHash.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 171);
+            this.button1.Location = new System.Drawing.Point(78, 192);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 29);
             this.button1.TabIndex = 6;
@@ -77,7 +86,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(241, 171);
+            this.button2.Location = new System.Drawing.Point(241, 192);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 29);
             this.button2.TabIndex = 7;
@@ -87,7 +96,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(241, 206);
+            this.button3.Location = new System.Drawing.Point(241, 227);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 29);
             this.button3.TabIndex = 9;
@@ -97,7 +106,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(78, 206);
+            this.button4.Location = new System.Drawing.Point(78, 227);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(157, 29);
             this.button4.TabIndex = 8;
@@ -108,7 +117,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 61);
+            this.label2.Location = new System.Drawing.Point(12, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 10;
@@ -116,7 +125,7 @@
             // 
             // txtInterval
             // 
-            this.txtInterval.Location = new System.Drawing.Point(78, 84);
+            this.txtInterval.Location = new System.Drawing.Point(78, 105);
             this.txtInterval.Name = "txtInterval";
             this.txtInterval.Size = new System.Drawing.Size(69, 20);
             this.txtInterval.TabIndex = 13;
@@ -125,7 +134,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 87);
+            this.label3.Location = new System.Drawing.Point(12, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 12;
@@ -133,7 +142,7 @@
             // 
             // txtServerURL
             // 
-            this.txtServerURL.Location = new System.Drawing.Point(78, 110);
+            this.txtServerURL.Location = new System.Drawing.Point(78, 131);
             this.txtServerURL.Name = "txtServerURL";
             this.txtServerURL.Size = new System.Drawing.Size(270, 20);
             this.txtServerURL.TabIndex = 15;
@@ -142,7 +151,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 113);
+            this.label4.Location = new System.Drawing.Point(12, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 14;
@@ -150,7 +159,7 @@
             // 
             // txtPublicIP
             // 
-            this.txtPublicIP.Location = new System.Drawing.Point(78, 136);
+            this.txtPublicIP.Location = new System.Drawing.Point(78, 157);
             this.txtPublicIP.Name = "txtPublicIP";
             this.txtPublicIP.Size = new System.Drawing.Size(270, 20);
             this.txtPublicIP.TabIndex = 17;
@@ -159,7 +168,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 139);
+            this.label5.Location = new System.Drawing.Point(12, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 16;
@@ -168,7 +177,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 35);
+            this.label6.Location = new System.Drawing.Point(12, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 18;
@@ -176,7 +185,7 @@
             // 
             // txtOutput
             // 
-            this.txtOutput.Location = new System.Drawing.Point(367, 32);
+            this.txtOutput.Location = new System.Drawing.Point(367, 53);
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -186,16 +195,16 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(153, 87);
+            this.label7.Location = new System.Drawing.Point(153, 108);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 21;
-            this.label7.Text = "update time in minuts";
+            this.label7.Text = "update time in minutes";
             // 
             // cbLogFile
             // 
             this.cbLogFile.AutoSize = true;
-            this.cbLogFile.Location = new System.Drawing.Point(78, 35);
+            this.cbLogFile.Location = new System.Drawing.Point(78, 56);
             this.cbLogFile.Name = "cbLogFile";
             this.cbLogFile.Size = new System.Drawing.Size(255, 17);
             this.cbLogFile.TabIndex = 22;
@@ -207,18 +216,83 @@
             this.cbLogEV.AutoSize = true;
             this.cbLogEV.Checked = true;
             this.cbLogEV.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbLogEV.Location = new System.Drawing.Point(78, 61);
+            this.cbLogEV.Location = new System.Drawing.Point(78, 82);
             this.cbLogEV.Name = "cbLogEV";
             this.cbLogEV.Size = new System.Drawing.Size(134, 17);
             this.cbLogEV.TabIndex = 23;
             this.cbLogEV.Text = "log to the event viewer";
             this.cbLogEV.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(798, 24);
+            this.menuStrip1.TabIndex = 24;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadSettingsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // loadSettingsToolStripMenuItem
+            // 
+            this.loadSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadFromDiskToolStripMenuItem,
+            this.revertToDefaultToolStripMenuItem});
+            this.loadSettingsToolStripMenuItem.Name = "loadSettingsToolStripMenuItem";
+            this.loadSettingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadSettingsToolStripMenuItem.Text = "&Settings";
+            // 
+            // loadFromDiskToolStripMenuItem
+            // 
+            this.loadFromDiskToolStripMenuItem.Name = "loadFromDiskToolStripMenuItem";
+            this.loadFromDiskToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.loadFromDiskToolStripMenuItem.Text = "Load from disk";
+            this.loadFromDiskToolStripMenuItem.Click += new System.EventHandler(this.loadFromDiskToolStripMenuItem_Click);
+            // 
+            // revertToDefaultToolStripMenuItem
+            // 
+            this.revertToDefaultToolStripMenuItem.Name = "revertToDefaultToolStripMenuItem";
+            this.revertToDefaultToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.revertToDefaultToolStripMenuItem.Text = "Revert to default";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 245);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(798, 270);
             this.Controls.Add(this.cbLogEV);
             this.Controls.Add(this.cbLogFile);
             this.Controls.Add(this.label7);
@@ -237,10 +311,17 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHash);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Dynamic Decimal DNS Installer";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,6 +347,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox cbLogFile;
         private System.Windows.Forms.CheckBox cbLogEV;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadFromDiskToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem revertToDefaultToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

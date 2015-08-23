@@ -85,6 +85,13 @@ namespace DynamicDecimalDNSInstaller
             File.SetAccessControl(fileName, fSecurity);
         }
 
+        /// <summary>
+        /// Executes each command/batch file to install service, start service, etc
+        /// 
+        /// </summary>
+        /// <param name="filename">file to execute, usually batch file</param>
+        /// <param name="message">message to show about this step</param>
+        /// <param name="sucesstxt">sucess message to look for of command output to change color red or green</param>
         private void Executa(string filename, string message, string sucesstxt)
         {
             txtOutput.BackColor = Color.White;
@@ -169,6 +176,20 @@ namespace DynamicDecimalDNSInstaller
 #endif
         }
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form about = new AboutBox();
+            about.ShowDialog();
+        }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void loadFromDiskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
